@@ -1,0 +1,14 @@
+{{ include("includes/header.html") }}
+
+{% for relic, items in relics %}
+<div class="relic">
+	<div class="relic-name">{{ relic }}</div>
+	<ul class="relic-items">
+		{% for item in items %}
+		<li class="{{ item.rarity }}">{{ item.name }} <span class="ducats">{{ item.ducats }}</span></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endfor %}
+
+{{ include("includes/footer.html") }}

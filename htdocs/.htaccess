@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteRule ^lith\/(.+)\/? /index.php?action=lith&page=$1 [NC,QSA,L]
+RewriteRule ^lith\/? /index.php [NC,QSA,L]
+
+RewriteRule ^meso\/(.+)\/? /index.php?action=meso&page=$1 [NC,QSA,L]
+RewriteRule ^meso\/? /index.php?action=meso [NC,QSA,L]
+
+RewriteRule ^neo\/(.+)\/? /index.php?action=neo&page=$1 [NC,QSA,L]
+RewriteRule ^neo\/? /index.php?action=neo [NC,QSA,L]
+
+RewriteRule ^axi\/(.+)\/? /index.php?action=axi&page=$1 [NC,QSA,L]
+RewriteRule ^axi\/? /index.php?action=axi [NC,QSA,L]

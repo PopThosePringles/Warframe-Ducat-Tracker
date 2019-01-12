@@ -1,0 +1,289 @@
+html, body, ul, ol {
+
+	margin: 0;
+	padding: 0;
+
+}
+
+@font-face {
+
+	font-family: "Roboto";
+	src: url("fonts/roboto/Roboto-Light.ttf");
+
+}
+
+@font-face {
+
+	font-family: "Warframe";
+	src: url("fonts/warframe/Warframe.ttf");
+
+}
+
+html, body {
+
+	height: 100%;
+
+}
+
+a {
+
+	text-decoration: none;
+	color: #c7cedb;
+
+}
+
+a:hover, header ul li:hover a {
+
+	color: #ffe78d;
+
+}
+
+body {
+
+	background-color: #2f3135;
+	color: #c7cedb;
+	font-family: Roboto, Arial, Verdana, sans-serif;
+
+}
+
+header {
+
+	background-color: #25272b;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #4a4b4f;
+	
+}
+
+header span {
+
+	margin-left: auto;
+	padding: 12px;
+	font-family: Warframe, Arial, Verdana, sans-serif;
+	text-shadow: 0 0 10px black;
+
+}
+
+header ul {
+
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+
+}
+
+header ul li {
+
+	background-color: #383a3e;
+	cursor: pointer;
+	text-align: center;
+	text-shadow: 0 0 5px black;
+	width: 55px;
+
+}
+
+header ul li a {
+
+	display: block;
+	line-height: 42px;
+
+}
+
+li.selected-menu-item a {
+
+	color: #ffe78d;
+
+}
+
+li.selected-menu-item, header ul li:hover {
+
+	background-color: #4a4b4f;
+
+}
+
+.wrapper {
+
+	flex-direction: column;
+	height: 100%;
+
+}
+
+.content {
+
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px 10px 10px 10px;
+	justify-content: center;
+
+}
+
+.relic {
+
+	width: 280px;
+	font-size: 14px;
+	background-color: #383a3e;
+	margin: 5px 5px 10px 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	position: relative;
+
+}
+
+.relic-items {
+
+	list-style-type: none;
+	margin-left: 10px;
+	margin-top: 25px;
+
+}
+
+.relic-items li {
+
+	margin-top: 5px;
+
+}
+
+.relic-name {
+
+	font-weight: bold;
+	color: #ffe78d;
+	text-align: center;
+	position: absolute;
+	top: -7px;
+	width: 100%;
+	background-color: #3e4044;
+	border-radius: 5px 5px 0 0;
+	padding: 4px 0;
+	text-shadow: 0 0 5px black;
+
+}
+
+.relic .ducats {
+
+	position: absolute;
+	padding-right: 10px;
+	background-image: url("/images/ducats.png");
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+	width: 44px;
+	right: 10px;
+	text-align: right;
+
+}
+
+.common {
+
+	color: #caa48f;
+
+}
+
+.uncommon {
+
+	color: #e2e2e2;
+
+}
+
+.rare {
+
+	color: #f1ead0;
+
+}
+
+.content.zoom-relics-1 .relic {
+
+	font-size: 15px !important;
+	width: 295px !important;
+
+}
+
+.content.zoom-relics-2 .relic {
+
+	font-size: 16px !important;
+	width: 305px !important;
+
+}
+
+.content.zoom-relics-2 .ducats {
+
+	background-position: 0 2px !important;
+	width: 47px !important;
+
+}
+
+.content.zoom-relics-3 .relic {
+
+	font-size: 17px !important;
+	width: 315px !important;
+
+}
+
+.content.zoom-relics-3 .ducats {
+
+	background-position: 0 3px !important;
+	width: 49px !important;
+
+}
+
+.content.zoom-relics-4 .relic {
+
+	font-size: 18px !important;
+	width: 335px !important;
+
+}
+
+.content.zoom-relics-4 .relic-items {
+
+	margin-top: 28px !important;
+
+}
+
+.content.zoom-relics-4 .ducats {
+
+	background-position: 0 3px !important;
+	width: 50px !important;
+
+}
+
+.content.zoom-relics-5 .relic {
+
+	font-size: 20px !important;
+	width: 360px !important;
+
+}
+
+.content.zoom-relics-5 .relic-items {
+
+	margin-top: 30px !important;
+
+}
+
+.content.zoom-relics-5 .ducats {
+
+	background-position: 0 4px !important;
+	width: 50px !important;
+
+}
+
+#zoom-relics {
+
+	background-color:  transparent !important;
+
+}
+
+#zoom-relics img {
+
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	transition: all 200ms ease-in;
+	transform: scale(1);
+
+}
+
+#zoom-relics a:hover img {
+
+	transition: all 200ms ease-in;
+	transform: scale(1.4, 1.4);
+
+}
