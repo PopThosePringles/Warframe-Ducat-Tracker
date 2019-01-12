@@ -6,11 +6,11 @@ Prices are pulled from the [Warframe Wiki](https://warframe.fandom.com/wiki/Duca
 
 To update prices (i.e when a new prime is released), run this line.
 
-Live example: http://ducats.pixeldepth.net
-
 ```
 net\pixeldepth\warframe\Warframe_Data :: fetch_data(true);
 ```
+
+Live example: http://ducats.pixeldepth.net
 
 ![Preview](misc/preview.png)
 
